@@ -1,0 +1,8 @@
+// toutes les lignes commenceant par '//' seront ignorés, faisant office de commentaires //
+// cette base de donnée au format .txt est utilisé pour le service de login, et elle est enrichie par le service de création de compte, vous pouvez parfaitement supprimer manuellement un duo login/ mot de passe //
+// format : login,mot_de_passe,equipe CS préférés,temps de jeu CS, jeu CS préféré,familiaritée avec l'e-sport//
+root,root,nip,big-fan,half:life,+500h
+thomas,thomas,vitality,never-known,no-fav-CS-game,jamais-joué
+test1,test1,no-fav-team,no-esport-knowing,no-fav-CS-game,never-play-CS
+,admin,no-fav-team,no-esport-knowing,no-fav-CS-game,never-play-CS
+root,root,no-fav-team,no-esport-knowing,no-fav-CS-game,never-play-CS

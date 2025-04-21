@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/style.css">
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      
+        <title>CS Esport</title>
+        <link rel="icon" type="image/x-icon" href="/static/cs2-logo.ico">
+      
+      </head>
+
+<body class="text-center">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="/static/vit-logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+      CS Esport
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav d-flex">
+        <li class="nav-item active " id="selected-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="calendrier">Calendrier</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="equipes">Equipes</a>
+        </li>
+        <li class="nav-item" id="login">
+          <a class="nav-link" href="login">Login</a>
+        </li>
+        <li class="nav-item" id="register">
+          <a class="nav-link" href="register">Register</a>
+        </li>
+        <li class="nav-item" id="contact">
+          <a class="nav-link" href="contact">Contact</a>
+        </li>
+        <li class="nav-item" id="js">
+          <a class="nav-link" href="js">js</a>
+        </li>
+
+
+
+      </ul>
+    </div>
+  </nav>
+    <p class="p-error"> ERREUR D'AUTHENTIFICATION</p>
+    <img src="static/authentication.png" alt="ERREUR D'AUTHENTIFICATION" id="error-logo">
+
+
+
+<button type="button" id="button-pop-up" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+    </button>
+    <style>
+        #button-pop-up{
+            display: none;
+        }
+    </style>
+
+  <!-- Pop up d'erreur -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Erreur d'authentification ! </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Malheuresement l'association login/ mot de passe n'est pas bonne <br> Merci de les vérifier et de réessayer.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+<!-- Ajoutez une balise script -->
+<script>
+    // Attend que le document soit complètement chargé
+    document.addEventListener("DOMContentLoaded", function() {
+      // Sélectionne le bouton de déclenchement de la modal
+      var modalButton = document.querySelector('[data-bs-target="#exampleModal"]');
+      // Si le bouton est trouvé
+      if (modalButton) {
+        // Simule un clic sur le bouton
+        modalButton.click();
+      }
+    });
+  </script>
+  
+<!-- Bootstrap scripts + script néscéssaire au bon fonctionnement de bootstrap  -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

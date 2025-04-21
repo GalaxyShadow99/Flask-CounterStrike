@@ -1,0 +1,77 @@
+/* BOOTSTRAP CARROUSEL */
+
+/* Carrousel acceuil  */
+#carouselExampleCaptions {
+    max-width: 100%; /* Largeur maximale souhaitée */
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+}
+/* Modifier la largeur et la hauteur des images à l'intérieur des diapositives */
+#carouselExampleCaptions .carousel-item img {
+    width: 100%; /* Largeur de l'image */
+    height: 100%; /* Hauteur de l'image */
+    /* object-fit: cover; Ajuster l'image pour couvrir la zone définie */
+}
+
+#carouselExampleCaptions .carousel-control-prev{
+    position: absolute;
+    top: 30%;
+    left: 1%;
+}
+
+#carouselExampleCaptions .carousel-control-next{
+    position: absolute;
+    top: 30%;
+    right: 1%;
+}
+#carouselExampleCaptions .carousel-indicators{
+    position: absolute;
+    top: 80%;
+
+}
+
+/* Modifier la couleur des boutons de contrôle */
+.carousel-control-prev,
+.carousel-control-next {
+
+    color: white; /* Couleur du texte souhaitée */
+}
+
+/* HEADER NAV */
+
+.nav{
+    position: fixed;
+    top: 0.5%;
+    left: 12.5%;
+    width: 75%;
+    color: white;
+    align-items: center;
+    background: whitesmoke;
+    z-index: 1;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    border-radius: 15%;
+}
+.nav a, a:hover,a:visited,a:focus{
+    color: black;
+    text-decoration: none;
+    font-size: xx-large;
+}
+.img-header{
+    height: 100px;
+    width: 100px;
+}
+.nav-item {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments */
+    align-items: center; /* Centrer verticalement les éléments */
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.nav-item img {
+    margin-right: 10%; /* Espace entre chaque image */
+}
